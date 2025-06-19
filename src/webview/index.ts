@@ -1,4 +1,6 @@
-private getWebviewContent(styleUri: vscode.Uri): string {
+import * as vscode from 'vscode';
+
+export function getWebviewContent(styleUri: vscode.Uri): string {
   return `
   <!DOCTYPE html>
   <html lang="en">

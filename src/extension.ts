@@ -3,7 +3,7 @@ import { DeepSeekClient } from './deepseek-client';
 
 export function activate(context: vscode.ExtensionContext) {
     const config = vscode.workspace.getConfiguration('deepseekCopilot');
-    const apiKey = config.get('sk-7c09cbda279b4f909626bfe98b6c4d20') as string; // Don't hardcode the key here!
+    const apiKey = config.get('YOUR_DEEPSEEK_API_KEY') as string; // Don't hardcode the key here!
 
     if (!apiKey) {
         vscode.window.showErrorMessage('❌ DeepSeek Copilot: Please set your API key in settings!');
