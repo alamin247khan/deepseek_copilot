@@ -1,0 +1,46 @@
+{
+  "name": "deepseek-copilot",
+  "displayName": "DeepSeek Copilot",
+  "description": "AI-powered code suggestions using DeepSeek API",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alamin247khan/deepseek-copilot.git"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "DeepSeek Copilot",
+      "properties": {
+        "deepseekCopilot.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Your DeepSeek API key"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.126",
+    "@types/node-fetch": "^2.6.12",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
