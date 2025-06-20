@@ -50,7 +50,7 @@ Replace `YOUR_DEEPSEEK_API_KEY` with your actual key.
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have ideas for new features or have found a bug, please open an issue or submit a pull request.
+Contributions are welcome! If you have ideas for new features or have found a bug, please open an issue or submit a pull request,
 
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
